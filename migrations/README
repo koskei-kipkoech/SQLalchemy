@@ -1,0 +1,10 @@
+Generic single-database configuration.
+
+## Migration
+
+- to set up migrations run ''' alembic init migrations ''' we run this command once
+
+- Modify alembic.ini '''sqlalchemy.url''' to the required db ie test.db
+- modify env.py inside migrations folder and import base models from model files
+- To create migrations " alembic revision --autogenerate -m "message"
+- to apply the generate migrations, run "alembic upgrade head"
